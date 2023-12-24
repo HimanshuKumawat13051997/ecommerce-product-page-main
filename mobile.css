@@ -1,0 +1,148 @@
+@media only screen and (max-width: 600px) {
+
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    user-select: none;
+  }
+  body .section {
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "nav" "main";
+    gap: 0px;
+    height: 80vh;
+    margin: 0px 0px 0px 0px;
+  }
+  body .section nav {
+    grid-area: nav;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  body .section nav .logo {
+   justify-content: space-around;
+  }
+  body .section nav ul {
+    display: none;
+  }
+  body .section main {
+    grid-area: main;
+    display: grid;
+    width: 100vw;
+    grid-template-rows: 250px 1fr;
+    grid-template-columns: 100vw;
+    row-gap: 20px;
+  }
+  body .section main .pic {
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .section main .pic .im2 {
+    display: none;
+  }
+  body .section main .pic .im1 .wwe1 {
+    width: 100vw;
+    height: 250px;
+    border-radius: 0px;
+    object-fit: cover;
+  }
+  body .section main .inf {
+    justify-content: space-around;
+    padding: 0px 30px 0px 30px;
+  }
+  body .section main .inf .para {
+    width: inherit;
+    font-weight: 400;
+    color: var(--Grayish_blue);
+    font-size: 0.9rem;
+    text-align: start;
+  }
+  body .section main .inf .klkl {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .section main .inf .klkl .dis {
+    font-size: 1rem;
+  }
+  .llll,
+  .kk {
+    font-size: 1.8rem;
+  }
+  body .section main .inf .klkl .pri .k1{
+font-size: 1rem;
+width: 45px;
+  }
+  body .section main .inf .btn {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .section .inf .btn .btn1{
+    width: 90vw;
+  }
+  body .section .inf .btn .btn2{
+    width: 90vw;
+    height: 45px;
+  }
+  body .section nav .last {
+    position: relative;
+    right: 15px;
+  }
+  .cartcard{
+    right: 3vw;
+    z-index: 13;
+  }
+  .cha11, .cha22{
+    display: flex;
+    cursor: pointer;
+  }
+
+  .cha11 svg path:hover,
+.cha22 svg path:hover {
+  stroke: var(--Orange);
+  cursor: pointer;
+}
+
+.nocart {
+  z-index: 1;
+}
+
+.colm{
+  background-color: white;
+}
+
+body .section main .pic .ch .im1 .wwe1{
+  animation-name: don;
+  animation-duration: 3s;
+}
+@keyframes don {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.nav .logo .burger{
+  cursor: pointer;
+  display: block;
+}
+
+.wwe1{
+  pointer-events: none;
+}
+
+.cartcard{
+  border-radius: 10px;
+  height: 220px;
+}
+}
+
+
